@@ -1,6 +1,38 @@
-h1{
-    font-weight: bold;
+
+html, body {
+    height: 100%;
 }
+.wrapper {
+    min-height: 100%;
+    //margin: 0 auto -50px; /* the bottom margin is the negative value of the footer's height */
+}
+footer, .push {
+    // height: 50px; /* '.push' must be the same height as 'footer' */
+}
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
+
+
+
+pre {
+    display: block;
+    font-family: monospace;
+    line-height: 20px;
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 12px; 
+}
+
+
+
 
 a{
     color: inherit;
@@ -8,7 +40,7 @@ a{
 }
 
 a:hover{
-    color: dodgerblue;
+    color: #1caadc;
 }
 .clear_float{
     clear: both;
@@ -44,7 +76,8 @@ a:hover{
     vertical-align: middle;
 }
 #header{
-
+    margin: 0 auto;
+    width: 1000px;
 }
 #header nav{
 
@@ -55,4 +88,124 @@ a:hover{
 
 #header #navigation{
     float:right;
+}
+
+#header #navigation li{
+    position: relative;
+    float: left;
+}
+
+#header #navigation li a{
+    display: inherit;
+    position: relative;
+    padding: 40px 20px;
+    text-transform: uppercase;
+    border-right: 1px solid #e1e1e1;
+    font-family: 'Oswald';
+    color: #707173;
+    transition:  all 0.2s ease;
+}
+
+#page_title_container_outter,
+#header #navigation li a.active,
+#header #navigation li a:hover{
+    color: white; 
+    background-color:#1caadc !important;
+}
+
+
+
+
+
+#page_title_container_inner{
+    font-family: 'Oswald';
+    margin: 0 auto;
+    width: 1000px;
+    text-transform: uppercase;
+}
+#page_title_container_inner #page_title{
+    float:left;
+    font-size: 30px;
+    padding: 20px 10px 20px 0;
+}
+#page_title_container_inner #breadcrumbs{
+    float:left;
+    font-size: 12px;
+    padding: 30px;
+}
+
+#page_title_container_inner #breadcrumbs a{
+    padding: 10px;
+    color: #fff;
+    opacity: 0.6
+}
+#page_title_container_inner #breadcrumbs .separator{
+    padding:0;
+    margin: 10px 5px;
+}
+#page_title_container_inner #breadcrumbs a.inactive:hover{
+    color:inherit;
+}
+
+#page_title_container_inner #breadcrumbs a:hover,
+#page_title_container_inner #breadcrumbs a.actve{
+    background: rgba(0,0,0,0.10);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    opacity: 1 !important;
+}
+
+.page_conatiner{
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
+.product_tile{
+    width: 300px;
+    border: 1px solid #ccc;
+    margin: 1px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.product_tile .image{
+    padding: 10px;
+    height: 100px;
+    background-color: white;
+}
+.product_tile .title{
+    background-color:#ebebeb;
+    font-size: 14px;
+    padding: 10px;
+}
+.product_tile .highlight li{
+    padding: 10px;
+}
+.product_tile .highlight .odd{
+    background-color:#ebebeb;
+}
+.product_tile .highlight .even{
+    background-color:#ccc;
+}
+.product_tile .footer{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+
+
+footer{
+    background: url(http://dynaprodirect.com/wp-content/themes/FitWP/images/footerBg.png) bottom right no-repeat #262729;
+}
+
+.smallFooter {
+    background: #151617;
+    padding: 20px 0;
+    color: #787b81;
+    font-size: 14px;
+    font-family: 'tahoma', sans-serif;
+    font-style: italic;
 }
