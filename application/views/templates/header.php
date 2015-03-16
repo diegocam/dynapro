@@ -4,10 +4,17 @@
         <meta charset="utf-8">
         <title>Welcome to CodeIgniter</title>
 
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href="<?= base_url() ?>assets/css/reset.css" rel="stylesheet">
         <link href="<?= base_url() ?>assets/css/main.css" rel="stylesheet">
+        
+        <script src="<?= base_url() ?>assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+        <link href="<?= base_url() ?>assets/plugins/flexslider/flexslider.css" rel="stylesheet">
 
     </head>
     <body>
@@ -27,7 +34,7 @@
             <div id="header">
                 <div id="logo">
                     <a href="<?= base_url() ?>">
-                        <img src="http://dynaprodirect.com/wp-content/uploads/2014/10/dynapro-logodd.jpg">
+                        <img src="http://dynaprodirect.com/wp-content/uploads/2014/10/dynapro-logo.jpg">
                     </a>
                 </div>
                 <div id="navigation">

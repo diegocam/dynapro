@@ -1,4 +1,62 @@
 
+<!-- Place somewhere in the <body> of your page -->
+<div id="slider" class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/slide1.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/slide2.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/slide3.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/slide4.jpg" />
+        </li>
+        <!-- items mirrored twice, total of 12 -->
+    </ul>
+</div>
+<div id="carousel" class="flexslider">
+    <ul class="slides">
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/thumbs/slide1.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/thumbs/slide2.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/thumbs/slide3.jpg" />
+        </li>
+        <li>
+            <img src="<?= base_url() ?>assets/images/slider/thumbs/slide4.jpg" />
+        </li>
+        <!-- items mirrored twice, total of 12 -->
+    </ul>
+</div>
+<script>
+    $(window).load(function() {
+        // The slider being synced must be initialized first
+        $('#carousel').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            asNavFor: '#slider'
+        });
+
+        $('#slider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            animationLoop: false,
+            slideshow: false,
+            sync: "#carousel"
+        });
+    });
+</script>
+
 <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </p>
